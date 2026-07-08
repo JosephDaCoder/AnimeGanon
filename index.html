@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AnimeGanon 🔥</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <a class="logo" href="#">
+    <span class="logo-icon">🔥</span>
+    <span class="logo-text">Anime<span>Ganon</span></span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Trending</a></li>
+    <li><a href="#">New Releases</a></li>
+    <li><a href="#">Genres</a></li>
+    <li><a href="#">My List</a></li>
+  </ul>
+  <div class="nav-right">
+    <div class="search-wrap">
+      <input type="text" placeholder="Search anime..." id="searchInput" oninput="handleSearch(this.value)" />
+      <span class="search-icon">🔍</span>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-shapes">
+    <div class="hero-shape"></div>
+    <div class="hero-shape"></div>
+  </div>
+  <div class="hero-anime-cards">
+    <div class="hero-mini-card">
+      <img src="https://via.placeholder.com/90x130/1a2332/e85d04?text=AoT" alt="Attack on Titan">
+    </div>
+    <div class="hero-mini-card">
+      <img src="https://via.placeholder.com/90x130/2a1a05/f48c06?text=ONE" alt="One Piece">
+    </div>
+    <div class="hero-mini-card">
+      <img src="https://via.placeholder.com/90x130/1a0a1a/e85d04?text=DZ" alt="Demon Slayer">
+    </div>
+  </div>
+  <div class="hero-overlay"></div>
+  <div class="hero-overlay-bottom"></div>
+  <div class="hero-content">
+    <div class="hero-badge">🔥 Now Featured</div>
+    <h1 class="hero-title">Demon Slayer:<br>Kimetsu no Yaiba</h1>
+    <p class="hero-desc">A young boy becomes a demon slayer after his family is slaughtered and his sister is turned into a demon. An epic journey of swords, fire, and brotherhood.</p>
+    <div class="hero-meta">
+      <span class="hero-meta-item">⭐ <span>9.1</span> / 10</span>
+      <span class="hero-meta-item">📅 <span>2026</span></span>
+      <span class="hero-meta-item">🎬 <span>44 episodes</span></span>
+      <span class="hero-meta-item">🏷️ <span>Action • Fantasy</span></span>
+    </div>
+    <div class="hero-btns">
+      <a href="#" class="btn-watch" onclick="openModal(animeData[0]); return false;">▶ Watch Now</a>
+      <a href="#" class="btn-info" onclick="openModal(animeData[0]); return false;">ℹ More Info</a>
+    </div>
+  </div>
+</section>
+
+<!-- GENRE FILTER -->
+<div class="genres" id="genreFilter">
+  <span class="genre-tag active" onclick="filterGenre('All', this)">All</span>
+  <span class="genre-tag" onclick="filterGenre('Action', this)">⚔️ Action</span>
+  <span class="genre-tag" onclick="filterGenre('Romance', this)">💕 Romance</span>
+  <span class="genre-tag" onclick="filterGenre('Fantasy', this)">🧙 Fantasy</span>
+  <span class="genre-tag" onclick="filterGenre('Horror', this)">👹 Horror</span>
+  <span class="genre-tag" onclick="filterGenre('Comedy', this)">😂 Comedy</span>
+  <span class="genre-tag" onclick="filterGenre('Sci-Fi', this)">🚀 Sci-Fi</span>
+  <span class="genre-tag" onclick="filterGenre('Sports', this)">🏆 Sports</span>
+  <span class="genre-tag" onclick="filterGenre('Isekai', this)">🌀 Isekai</span>
+</div>
+
+<!-- TRENDING -->
+<section class="section">
+  <div class="section-header">
+    <h2 class="section-title">🔥 Trending Now</h2>
+    <a href="#" class="see-all">See All →</a>
+  </div>
+  <div class="cards-row" id="trendingCards"></div>
+</section>
+
+<!-- FEATURED BANNER -->
+<div class="featured-banner">
+  <div class="featured-left">
+    <div class="featured-label">🌟 Editor's Pick</div>
+    <h3 class="featured-title">One Piece</h3>
+    <p class="featured-desc">The legendary pirate saga that has captivated fans for decades. Join Luffy and his crew on the ultimate adventure to find the One Piece.</p>
+    <div style="margin-top: 1rem; display: flex; gap: 0.8rem; flex-wrap: wrap;">
+      <a href="#" class="btn-watch" style="font-size: 0.88rem; padding: 9px 22px;" onclick="openModal(animeData[5]); return false;">▶ Start Watching</a>
+    </div>
+  </div>
+  <div class="featured-right">
+    <img src="https://via.placeholder.com/600x220/0d1a30/f48c06?text=ONE+PIECE" alt="One Piece">
+  </div>
+</div>
+
+<!-- NEW RELEASES -->
+<section class="section">
+  <div class="section-header">
+    <h2 class="section-title">✨ New Releases</h2>
+    <a href="#" class="see-all">See All →</a>
+  </div>
+  <div class="cards-row-wide" id="newReleasesCards"></div>
+</section>
+
+<!-- CONTINUE WATCHING -->
+<section class="section">
+  <div class="section-header">
+    <h2 class="section-title">⏯ Continue Watching</h2>
+    <a href="#" class="see-all">See All →</a>
+  </div>
+  <div class="cards-row-wide" id="continueCards"></div>
+</section>
+
+<!-- POPULAR ALL TIME -->
+<section class="section">
+  <div class="section-header">
+    <h2 class="section-title">🏆 Most Popular</h2>
+    <a href="#" class="see-all">See All →</a>
+  </div>
+  <div class="cards-row" id="popularCards"></div>
+</section>
+
+<!-- COMING SOON -->
+<section class="section">
+  <div class="section-header">
+    <h2 class="section-title">📅 Coming Soon</h2>
+  </div>
+  <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 12px;" id="comingSoonCards"></div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">🔥 AnimeGanon</div>
+  <p>The ultimate free anime streaming destination.</p>
+  <p style="margin-top: 0.8rem; font-size: 0.8rem;">© 2026 AnimeGanon · Made with ❤️ for anime lovers</p>
+</footer>
+
+<!-- MODAL -->
+<div class="modal-overlay" id="modalOverlay" onclick="closeModalOutside(event)">
+  <div class="modal" id="modal">
+    <div class="modal-thumb">
+      <img id="modalImg" src="" alt="">
+      <div class="modal-thumb-overlay">
+        <div class="modal-play" onclick="playVideo(currentAnime)">▶</div>
+      </div>
+      <button class="modal-close" onclick="closeModal()">✕</button>
+    </div>
+    <div class="modal-body">
+      <h3 class="modal-title" id="modalTitle"></h3>
+      <div class="modal-meta" id="modalMeta"></div>
+      <p class="modal-desc" id="modalDesc"></p>
+      <div style="display: flex; gap: 0.8rem; flex-wrap: wrap;">
+        <button class="btn-watch" id="watchBtn">▶ Watch Now</button>
+        <button class="btn-info" onclick="closeModal()">✕ Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
