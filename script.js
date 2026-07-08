@@ -1,1 +1,267 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/></head><body>// ─── ANIME DATA ───────────────────────────────────────────────────────────────<br>const animeData = [<br>&nbsp; { id:1, title:"Demon Slayer", genre:["Action","Fantasy"], year:"<a href="tel:2019">2019</a>", rating:"<a href="tel:9.1">9.1</a>", eps:"44", badge:"HOT",<br>&nbsp;&nbsp;&nbsp; videoUrl: "",<br>&nbsp;&nbsp;&nbsp; thumb:"<a href="https://cdn.myanimelist.net/images/anime/1286/99889.jpg">https://cdn.myanimelist.net/images/anime/1286/99889.jpg</a>",<br>&nbsp;&nbsp;&nbsp; banner:"<a href="https://cdn.myanimelist.net/images/anime/1286/99889l.jpg">https://cdn.myanimelist.net/images/anime/1286/99889l.jpg</a>",<br>&nbsp;&nbsp;&nbsp; desc:"Tanjiro Kamado, a gentle-hearted boy who sells charcoal, discovers his family was attacked by demons. His sister Nezuko survived but was turned into one. He joins the Demon Slayer Corps on a quest to avenge his family.",<br>&nbsp;&nbsp;&nbsp; isNew:false, isTrending:true, isPopular:true, progress:65 },<br><br>&nbsp; { id:2, title:"Attack on Titan", genre:["Action","Horror"], year:"<a href="tel:2013">2013</a>", rating:"<a href="tel:9.0">9.0</a>", eps:"88", badge:"TOP",<br>&nbsp;&nbsp;&nbsp; videoUrl: "",<br>&nbsp;&nbsp;&nbsp; thumb:"<a href="https://cdn.myanimelist.net/images/anime/10/47347.jpg">https://cdn.myanimelist.net/images/anime/10/47347.jpg</a>",<br>&nbsp;&nbsp;&nbsp; banner:"<a href="https://cdn.myanimelist.net/images/anime/10/47347l.jpg">https://cdn.myanimelist.net/images/anime/10/47347l.jpg</a>",<br>&nbsp;&nbsp;&nbsp; desc:"Humanity lives inside cities surrounded by enormous walls due to the Titans, gigantic humanoid creatures who devour humans seemingly without reason. Eren Yeager joins the military to fight back.",<br>&nbsp;&nbsp;&nbsp; isNew:false, isTrending:true, isPopular:true, progress:30 },<br><br>&nbsp; { id:3, title:"Jujutsu Kaisen", genre:["Action","Fantasy"], year:"<a href="tel:2020">2020</a>", rating:"<a href="tel:8.9">8.9</a>", eps:"48", badge:"NEW",<br>&nbsp;&nbsp;&nbsp; videoUrl: "",<br>&nbsp;&nbsp;&nbsp; thumb:"<a href="https://cdn.myanimelist.net/images/anime/1171/109222.jpg">https://cdn.myanimelist.net/images/anime/1171/109222.jpg</a>",<br>&nbsp;&nbsp;&nbsp; banner:"<a href="https://cdn.myanimelist.net/images/anime/1171/109222l.jpg">https://cdn.myanimelist.net/images/anime/1171/109222l.jpg</a>",<br>&nbsp;&nbsp;&nbsp; desc:"Yuji Itadori, a boy with superhuman physical abilities, joins a secret organization of Jujutsu Sorcerers to eliminate a powerful Curse named Ryomen Sukuna.",<br>&nbsp;&nbsp;&nbsp; isNew:true, isTrending:true, isPopular:true, progress:80 },<br><br>&nbsp; { id:4, title:"Fullmetal Alchemist: Brotherhood", genre:["Action","Fantasy"], year:"<a href="tel:2009">2009</a>", rating:"<a href="tel:9.1">9.1</a>", eps:"64", badge:"",<br>&nbsp;&nbsp;&nbsp; videoUrl: "",<br>&nbsp;&nbsp;&nbsp; thumb:"<a href="https://cdn.myanimelist.net/images/anime/1223/96541.jpg">https://cdn.myanimelist.net/images/anime/1223/96541.jpg</a>",<br>&nbsp;&nbsp;&nbsp; banner:"<a href="https://cdn.myanimelist.net/images/anime/1223/96541l.jpg">https://cdn.myanimelist.net/images/anime/1223/96541l.jpg</a>",<br>&nbsp;&nbsp;&nbsp; desc:"Two brothers search for a Philosopher's Stone after an attempt to revive their deceased mother goes wrong, leaving them with disabilities.",<br>&nbsp;&nbsp;&nbsp; isNew:false, isTrending:false, isPopular:true, progress:0 },<br><br>&nbsp; { id:5, title:"Naruto Shippuden", genre:["Action","Fantasy"], year:"<a href="tel:2007">2007</a>", rating:"<a href="tel:8.7">8.7</a>", eps:"<a href="tel:500">500</a>", badge:"",<br>&nbsp;&nbsp;&nbsp; videoUrl: "",<br>&nbsp;&nbsp;&nbsp; thumb:"<a href="https://cdn.myanimelist.net/images/anime/1565/111305.jpg">https://cdn.myanimelist.net/images/anime/1565/111305.jpg</a>",<br>&nbsp;&nbsp;&nbsp; banner:"<a href="https://cdn.myanimelist.net/images/anime/1565/111305l.jpg">https://cdn.myanimelist.net/images/anime/1565/111305l.jpg</a>",<br>&nbsp;&nbsp;&nbsp; desc:"Naruto Uzumaki, a young ninja who seeks recognition and dreams of becoming the Hokage, the leader of his village. A story of friendship, perseverance, and never giving up.",<br>&nbsp;&nbsp;&nbsp; isNew:false, isTrending:false, isPopular:true, progress:45 },<br><br>&nbsp; { id:6, title:"One Piece", genre:["Action","Comedy"], year:"<a href="tel:1999">1999</a>", rating:"<a href="tel:9.0">9.0</a>", eps:"<a href="tel:1000">1000</a>+", badge:"TOP",<br>&nbsp;&nbsp;&nbsp; videoUrl: "",<br>&nbsp;&nbsp;&nbsp; thumb:"<a href="https://cdn.myanimelist.net/images/anime/6/73245.jpg">https://cdn.myanimelist.net/images/anime/6/73245.jpg</a>",<br>&nbsp;&nbsp;&nbsp; banner:"<a href="https://cdn.myanimelist.net/images/anime/6/73245l.jpg">https://cdn.myanimelist.net/images/anime/6/73245l.jpg</a>",<br>&nbsp;&nbsp;&nbsp; desc:"Monkey D. Luffy and his crew of pirates search for the ultimate treasure known as the 'One Piece' to become the King of the Pirates.",<br>&nbsp;&nbsp;&nbsp; isNew:false, isTrending:true, isPopular:true, progress:0 },<br><br>&nbsp; { id:7, title:"My Hero Academia", genre:["Action","Sci-Fi"], year:"<a href="tel:2016">2016</a>", rating:"<a href="tel:8.5">8.5</a>", eps:"<a href="tel:113">113</a>", badge:"NEW",<br>&nbsp;&nbsp;&nbsp; videoUrl: "",<br>&nbsp;&nbsp;&nbsp; thumb:"<a href="https://cdn.myanimelist.net/images/anime/10/78745.jpg">https://cdn.myanimelist.net/images/anime/10/78745.jpg</a>",<br>&nbsp;&nbsp;&nbsp; banner:"<a href="https://cdn.myanimelist.net/images/anime/10/78745l.jpg">https://cdn.myanimelist.net/images/anime/10/78745l.jpg</a>",<br>&nbsp;&nbsp;&nbsp; desc:"In a world where most people have superpowers called Quirks, Izuku Midoriya is born without one. But his encounter with the greatest hero changes everything.",<br>&nbsp;&nbsp;&nbsp; isNew:true, isTrending:true, isPopular:false, progress:0 },<br><br>&nbsp; { id:8, title:"Death Note", genre:["Horror","Sci-Fi"], year:"<a href="tel:2006">2006</a>", rating:"<a href="tel:9.0">9.0</a>", eps:"37", badge:"",<br>&nbsp;&nbsp;&nbsp; videoUrl: "",<br>&nbsp;&nbsp;&nbsp; thumb:"<a href="https://cdn.myanimelist.net/images/anime/9/9453.jpg">https://cdn.myanimelist.net/images/anime/9/9453.jpg</a>",<br>&nbsp;&nbsp;&nbsp; banner:"<a href="https://cdn.myanimelist.net/images/anime/9/9453l.jpg">https://cdn.myanimelist.net/images/anime/9/9453l.jpg</a>",<br>&nbsp;&nbsp;&nbsp; desc:"A student named Light Yagami discovers a supernatural notebook that grants him the power to kill anyone whose name he writes in it.",<br>&nbsp;&nbsp;&nbsp; isNew:false, isTrending:false, isPopular:true, progress:0 },<br><br>&nbsp; { id:9, title:"Sword Art Online", genre:["Isekai","Action"], year:"<a href="tel:2012">2012</a>", rating:"<a href="tel:7.8">7.8</a>", eps:"96", badge:"",<br>&nbsp;&nbsp;&nbsp; videoUrl: "",<br>&nbsp;&nbsp;&nbsp; thumb:"<a href="https://cdn.myanimelist.net/images/anime/11/39717.jpg">https://cdn.myanimelist.net/images/anime/11/39717.jpg</a>",<br>&nbsp;&nbsp;&nbsp; banner:"<a href="https://cdn.myanimelist.net/images/anime/11/39717l.jpg">https://cdn.myanimelist.net/images/anime/11/39717l.jpg</a>",<br>&nbsp;&nbsp;&nbsp; desc:"Kazuto Kirigaya is trapped in a virtual reality MMORPG with thousands of other players. The only way out is to beat all <a href="tel:100">100</a> floors of the game.",<br>&nbsp;&nbsp;&nbsp; isNew:false, isTrending:false, isPopular:false, progress:0 },<br><br>&nbsp; { id:10, title:"Tokyo Ghoul", genre:["Action","Horror"], year:"<a href="tel:2014">2014</a>", rating:"<a href="tel:7.9">7.9</a>", eps:"48", badge:"",<br>&nbsp;&nbsp;&nbsp; videoUrl: "",<br>&nbsp;&nbsp;&nbsp; thumb:"<a href="https://cdn.myanimelist.net/images/anime/5/64449.jpg">https://cdn.myanimelist.net/images/anime/5/64449.jpg</a>",<br>&nbsp;&nbsp;&nbsp; banner:"<a href="https://cdn.myanimelist.net/images/anime/5/64449l.jpg">https://cdn.myanimelist.net/images/anime/5/64449l.jpg</a>",<br>&nbsp;&nbsp;&nbsp; desc:"Ken Kaneki, a college student, nearly dies in an attack by a ghoul — a creature that consumes human flesh — and transforms into a half-ghoul himself.",<br>&nbsp;&nbsp;&nbsp; isNew:false, isTrending:false, isPopular:true, progress:0 },<br><br>&nbsp; { id:11, title:"Re:Zero", genre:["Isekai","Fantasy"], year:"<a href="tel:2016">2016</a>", rating:"<a href="tel:8.2">8.2</a>", eps:"50", badge:"NEW",<br>&nbsp;&nbsp;&nbsp; videoUrl: "",<br>&nbsp;&nbsp;&nbsp; thumb:"<a href="https://cdn.myanimelist.net/images/anime/1522/128039.jpg">https://cdn.myanimelist.net/images/anime/1522/128039.jpg</a>",<br>&nbsp;&nbsp;&nbsp; banner:"<a href="https://cdn.myanimelist.net/images/anime/1522/128039l.jpg">https://cdn.myanimelist.net/images/anime/1522/128039l.jpg</a>",<br>&nbsp;&nbsp;&nbsp; desc:"Subaru Natsuki is suddenly summoned to another world on his way home from the convenience store. With no idea who did it, he begins to investigate.",<br>&nbsp;&nbsp;&nbsp; isNew:true, isTrending:false, isPopular:false, progress:0 },<br><br>&nbsp; { id:12, title:"Haikyuu!!", genre:["Sports","Comedy"], year:"<a href="tel:2014">2014</a>", rating:"<a href="tel:8.7">8.7</a>", eps:"85", badge:"",<br>&nbsp;&nbsp;&nbsp; videoUrl: "",<br>&nbsp;&nbsp;&nbsp; thumb:"<a href="https://cdn.myanimelist.net/images/anime/7/76014.jpg">https://cdn.myanimelist.net/images/anime/7/76014.jpg</a>",<br>&nbsp;&nbsp;&nbsp; banner:"<a href="https://cdn.myanimelist.net/images/anime/7/76014l.jpg">https://cdn.myanimelist.net/images/anime/7/76014l.jpg</a>",<br>&nbsp;&nbsp;&nbsp; desc:"Shoyo Hinata, a short boy inspired by a volleyball player, joins his middle school team and pursues his dream to become a great volleyball player despite his height.",<br>&nbsp;&nbsp;&nbsp; isNew:false, isTrending:true, isPopular:false, progress:0 },<br>];<br><br>const comingSoon = [<br>&nbsp; { title:"Bleach: Thousand-Year Blood War Pt. 4", month:"JUL", day:"12", ep:"Final Arc Continues" },<br>&nbsp; { title:"One Punch Man Season 3", month:"AUG", day:"3", ep:"New Season" },<br>&nbsp; { title:"Chainsaw Man Season 2", month:"OCT", day:"7", ep:"Awaited Sequel" },<br>];<br><br>let currentGenre = "All";<br>let searchQuery = "";<br><br>function renderCard(anime) {<br>&nbsp; const hasLink = !!<a href="http://anime.videoUrl">anime.videoUrl</a>;<br>&nbsp; return `<br>&nbsp;&nbsp;&nbsp; &lt;div class="anime-card" onclick="openModal(<a href="http://animeData.find">animeData.find</a>(a=&gt;<a href="http://a.id">a.id</a>==${<a href="http://anime.id">anime.id</a>}))"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="card-thumb"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;img src="${<a href="http://anime.thumb">anime.thumb</a>}" alt="${<a href="http://anime.title">anime.title</a>}" loading="lazy" onerror="<a href="http://this.src">this.src</a>='<a href="https://via.placeholder.com/200x300/1a2332/e85d04?text">https://via.placeholder.com/200x300/1a2332/e85d04?text</a>=${encodeURIComponent(<a href="http://anime.title">anime.title</a>)}'"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ${<a href="http://anime.badge">anime.badge</a> ? `&lt;div class="card-badge ${<a href="http://anime.badge">anime.badge</a>==='NEW'?'new':<a href="http://anime.badge">anime.badge</a>==='TOP'?'top':''}"&gt;${<a href="http://anime.badge">anime.badge</a>}&lt;/div&gt;` : ''}<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ${!hasLink ? `&lt;div class="card-badge" style="top:auto;bottom:8px;left:8px;background:#<a href="tel:374151">374151</a>;font-size:<a href="tel:0.62">0.62</a>rem;"&gt;NO LINK&lt;/div&gt;` : ''}<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="card-overlay"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="play-btn"&gt;&amp;#<a href="tel:9654">9654</a>;&lt;/div&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="card-info"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="card-title"&gt;${<a href="http://anime.title">anime.title</a>}&lt;/div&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="card-sub"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;span class="card-rating"&gt;&amp;#<a href="tel:11088">11088</a>; ${<a href="http://anime.rating">anime.rating</a>}&lt;/span&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;span&gt;${<a href="http://anime.year">anime.year</a>}&lt;/span&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;span&gt;${<a href="http://anime.eps">anime.eps</a>} eps&lt;/span&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp; `;<br>}<br><br>function renderContinueCard(anime) {<br>&nbsp; return `<br>&nbsp;&nbsp;&nbsp; &lt;div class="continue-card" onclick="openModal(<a href="http://animeData.find">animeData.find</a>(a=&gt;<a href="http://a.id">a.id</a>==${<a href="http://anime.id">anime.id</a>}))"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="continue-thumb"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;img src="${<a href="http://anime.banner">anime.banner</a>}" alt="${<a href="http://anime.title">anime.title</a>}" loading="lazy" onerror="<a href="http://this.src">this.src</a>='<a href="https://via.placeholder.com/520x293/1a2332/e85d04?text">https://via.placeholder.com/520x293/1a2332/e85d04?text</a>=${encodeURIComponent(<a href="http://anime.title">anime.title</a>)}'"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="progress-bar"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="progress-fill" style="width:${<a href="http://anime.progress">anime.progress</a>}%"&gt;&lt;/div&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="continue-info"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="continue-title"&gt;${<a href="http://anime.title">anime.title</a>}&lt;/div&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="continue-ep"&gt;${<a href="http://anime.progress">anime.progress</a>}% watched &amp;middot; ${<a href="http://anime.eps">anime.eps</a>} eps&lt;/div&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp; `;<br>}<br><br>function renderAll() {<br>&nbsp; let filtered = animeData;<br>&nbsp; if (currentGenre !== "All") filtered = <a href="http://filtered.filter">filtered.filter</a>(a =&gt; <a href="http://a.genre.includes">a.genre.includes</a>(currentGenre));<br>&nbsp; if (searchQuery) filtered = <a href="http://filtered.filter">filtered.filter</a>(a =&gt; <a href="http://a.title.toLowerCase">a.title.toLowerCase</a>().includes(<a href="http://searchQuery.toLowerCase">searchQuery.toLowerCase</a>()));<br><br>&nbsp; const trending&nbsp;&nbsp;&nbsp; = <a href="http://filtered.filter">filtered.filter</a>(a =&gt; <a href="http://a.isTrending">a.isTrending</a>);<br>&nbsp; const newReleases = <a href="http://filtered.filter">filtered.filter</a>(a =&gt; <a href="http://a.isNew">a.isNew</a>);<br>&nbsp; const popular&nbsp;&nbsp;&nbsp;&nbsp; = <a href="http://filtered.filter">filtered.filter</a>(a =&gt; <a href="http://a.isPopular">a.isPopular</a>);<br>&nbsp; const continueW&nbsp;&nbsp; = <a href="http://animeData.filter">animeData.filter</a>(a =&gt; <a href="http://a.progress">a.progress</a> &gt; 0);<br><br>&nbsp; const empty = '&lt;p style="color:var(--text-muted); grid-column:1/-1"&gt;No anime found.&lt;/p&gt;';<br>&nbsp; <a href="http://document.getElementById">document.getElementById</a>('trendingCards').innerHTML&nbsp;&nbsp;&nbsp; = <a href="http://trending.map">trending.map</a>(renderCard).join('') || empty;<br>&nbsp; <a href="http://document.getElementById">document.getElementById</a>('newReleasesCards').innerHTML = <a href="http://newReleases.map">newReleases.map</a>(renderCard).join('') || empty;<br>&nbsp; <a href="http://document.getElementById">document.getElementById</a>('popularCards').innerHTML&nbsp;&nbsp;&nbsp;&nbsp; = <a href="http://popular.map">popular.map</a>(renderCard).join('') || empty;<br>&nbsp; <a href="http://document.getElementById">document.getElementById</a>('continueCards').innerHTML&nbsp;&nbsp;&nbsp; = <a href="http://continueW.map">continueW.map</a>(renderContinueCard).join('');<br>}<br><br>function renderComingSoon() {<br>&nbsp; <a href="http://document.getElementById">document.getElementById</a>('comingSoonCards').innerHTML = <a href="http://comingSoon.map">comingSoon.map</a>(c =&gt; `<br>&nbsp;&nbsp;&nbsp; &lt;div class="coming-card"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="coming-date"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;span class="coming-month"&gt;${<a href="http://c.month">c.month</a>}&lt;/span&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;span class="coming-day"&gt;${<a href="http://c.day">c.day</a>}&lt;/span&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="coming-info"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="coming-name"&gt;${<a href="http://c.title">c.title</a>}&lt;/div&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="coming-ep"&gt;${<a href="http://c.ep">c.ep</a>}&lt;/div&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp; `).join('');<br>}<br><br>function filterGenre(genre, el) {<br>&nbsp; currentGenre = genre;<br>&nbsp; <a href="http://document.querySelectorAll">document.querySelectorAll</a>('.genre-tag').forEach(t =&gt; <a href="http://t.classList.remove">t.classList.remove</a>('active'));<br>&nbsp; <a href="http://el.classList.add">el.classList.add</a>('active');<br>&nbsp; renderAll();<br>}<br><br>function handleSearch(val) {<br>&nbsp; searchQuery = val;<br>&nbsp; renderAll();<br>}<br><br>let currentAnime = null;<br><br>function openModal(anime) {<br>&nbsp; if (!anime) return;<br>&nbsp; currentAnime = anime;<br><br>&nbsp; <a href="http://document.getElementById">document.getElementById</a>('modalImg').src = <a href="http://anime.banner">anime.banner</a>;<br>&nbsp; <a href="http://document.getElementById">document.getElementById</a>('modalImg').alt = <a href="http://anime.title">anime.title</a>;<br>&nbsp; <a href="http://document.getElementById">document.getElementById</a>('modalTitle').textContent = <a href="http://anime.title">anime.title</a>;<br>&nbsp; <a href="http://document.getElementById">document.getElementById</a>('modalMeta').innerHTML = `<br>&nbsp;&nbsp;&nbsp; &lt;span class="modal-tag"&gt;&amp;#<a href="tel:11088">11088</a>; ${<a href="http://anime.rating">anime.rating</a>}&lt;/span&gt;<br>&nbsp;&nbsp;&nbsp; &lt;span class="modal-tag"&gt;&amp;#<a href="tel:128197">128197</a>; ${<a href="http://anime.year">anime.year</a>}&lt;/span&gt;<br>&nbsp;&nbsp;&nbsp; &lt;span class="modal-tag"&gt;&amp;#<a href="tel:127916">127916</a>; ${<a href="http://anime.eps">anime.eps</a>} eps&lt;/span&gt;<br>&nbsp;&nbsp;&nbsp; ${<a href="http://anime.genre.map">anime.genre.map</a>(g=&gt;`&lt;span class="modal-tag"&gt;${g}&lt;/span&gt;`).join('')}<br>&nbsp; `;<br>&nbsp; <a href="http://document.getElementById">document.getElementById</a>('modalDesc').textContent = <a href="http://anime.desc">anime.desc</a>;<br><br>&nbsp; const thumb = <a href="http://document.querySelector">document.querySelector</a>('.modal-thumb');<br>&nbsp; const oldIframe = <a href="http://thumb.querySelector">thumb.querySelector</a>('iframe');<br>&nbsp; if (oldIframe) <a href="http://oldIframe.remove">oldIframe.remove</a>();<br>&nbsp; <a href="http://document.querySelector">document.querySelector</a>('.modal-thumb-overlay').<a href="http://style.display">style.display</a> = 'flex';<br><br>&nbsp; const watchBtn = <a href="http://document.getElementById">document.getElementById</a>('watchBtn');<br>&nbsp; if (<a href="http://anime.videoUrl">anime.videoUrl</a>) {<br>&nbsp;&nbsp;&nbsp; <a href="http://watchBtn.textContent">watchBtn.textContent</a> = '▶ Watch Now';<br>&nbsp;&nbsp;&nbsp; <a href="http://watchBtn.style.background">watchBtn.style.background</a> = 'var(--accent)';<br>&nbsp;&nbsp;&nbsp; <a href="http://watchBtn.onclick">watchBtn.onclick</a> = () =&gt; playVideo(anime);<br>&nbsp; } else {<br>&nbsp;&nbsp;&nbsp; <a href="http://watchBtn.textContent">watchBtn.textContent</a> = '🔗 Add Video Link';<br>&nbsp;&nbsp;&nbsp; <a href="http://watchBtn.style.background">watchBtn.style.background</a> = '#<a href="tel:374151">374151</a>';<br>&nbsp;&nbsp;&nbsp; <a href="http://watchBtn.onclick">watchBtn.onclick</a> = () =&gt; promptAddLink(anime);<br>&nbsp; }<br><br>&nbsp; <a href="http://document.getElementById">document.getElementById</a>('modalOverlay').<a href="http://classList.add">classList.add</a>('open');<br>&nbsp; <a href="http://document.body.style.overflow">document.body.style.overflow</a> = 'hidden';<br>}<br><br>function playVideo(anime) {<br>&nbsp; if (!<a href="http://anime.videoUrl">anime.videoUrl</a>) { promptAddLink(anime); return; }<br>&nbsp; const thumb = <a href="http://document.querySelector">document.querySelector</a>('.modal-thumb');<br>&nbsp; const overlay = <a href="http://document.querySelector">document.querySelector</a>('.modal-thumb-overlay');<br>&nbsp; const old = <a href="http://thumb.querySelector">thumb.querySelector</a>('iframe');<br>&nbsp; if (old) <a href="http://old.remove">old.remove</a>();<br><br>&nbsp; const iframe = <a href="http://document.createElement">document.createElement</a>('iframe');<br>&nbsp; <a href="http://iframe.src">iframe.src</a> = <a href="http://anime.videoUrl">anime.videoUrl</a>;<br>&nbsp; <a href="http://iframe.style.cssText">iframe.style.cssText</a> = 'position:absolute;inset:0;width:<a href="tel:100">100</a>%;height:<a href="tel:100">100</a>%;border:none;z-index:3;';<br>&nbsp; <a href="http://iframe.allowFullscreen">iframe.allowFullscreen</a> = true;<br>&nbsp; <a href="http://iframe.allow">iframe.allow</a> = "autoplay; fullscreen";<br>&nbsp; <a href="http://thumb.appendChild">thumb.appendChild</a>(iframe);<br>&nbsp; <a href="http://overlay.style.display">overlay.style.display</a> = 'none';<br>}<br><br>function promptAddLink(anime) {<br>&nbsp; const url = prompt(<br>&nbsp;&nbsp;&nbsp; 'Paste the video link for "' + <a href="http://anime.title">anime.title</a> + '":\n\nWorks with:\n• YouTube link\n• Google Drive share link\n• Direct .mp4 link\n• Any embed link',<br>&nbsp;&nbsp;&nbsp; <a href="http://anime.videoUrl">anime.videoUrl</a> || ''<br>&nbsp; );<br>&nbsp; if (url === null) return;<br>&nbsp; if (<a href="http://url.trim">url.trim</a>() === '') {<br>&nbsp;&nbsp;&nbsp; <a href="http://anime.videoUrl">anime.videoUrl</a> = '';<br>&nbsp;&nbsp;&nbsp; alert('Video link removed from "' + <a href="http://anime.title">anime.title</a> + '".');<br>&nbsp;&nbsp;&nbsp; openModal(anime);<br>&nbsp;&nbsp;&nbsp; return;<br>&nbsp; }<br>&nbsp; <a href="http://anime.videoUrl">anime.videoUrl</a> = <a href="http://url.trim">url.trim</a>();<br>&nbsp; alert('Link saved for "' + <a href="http://anime.title">anime.title</a> + '"! Tap Watch Now to play.');<br>&nbsp; openModal(anime);<br>}<br><br>function closeModal() {<br>&nbsp; const old = <a href="http://document.querySelector">document.querySelector</a>('.modal-thumb iframe');<br>&nbsp; if (old) <a href="http://old.remove">old.remove</a>();<br>&nbsp; <a href="http://document.querySelector">document.querySelector</a>('.modal-thumb-overlay').<a href="http://style.display">style.display</a> = 'flex';<br>&nbsp; <a href="http://document.getElementById">document.getElementById</a>('modalOverlay').<a href="http://classList.remove">classList.remove</a>('open');<br>&nbsp; <a href="http://document.body.style.overflow">document.body.style.overflow</a> = '';<br>}<br><br>function closeModalOutside(e) {<br>&nbsp; if (<a href="http://e.target">e.target</a> === <a href="http://document.getElementById">document.getElementById</a>('modalOverlay')) closeModal();<br>}<br><br><a href="http://document.addEventListener">document.addEventListener</a>('keydown', e =&gt; { if (<a href="http://e.key">e.key</a> === 'Escape') closeModal(); });<br><br>renderAll();<br>renderComingSoon();<br></body></html>
+// ─── ANIME DATA ───────────────────────────────────────────────────────────────
+const animeData = [
+  { id:1, title:"Demon Slayer", genre:["Action","Fantasy"], year:"2019", rating:"9.1", eps:"44", badge:"HOT",
+    videoUrl: "",
+    thumb:"https://cdn.myanimelist.net/images/anime/1286/99889.jpg",
+    banner:"https://cdn.myanimelist.net/images/anime/1286/99889l.jpg",
+    desc:"Tanjiro Kamado, a gentle-hearted boy who sells charcoal, discovers his family was attacked by demons. His sister Nezuko survived but was turned into one. He joins the Demon Slayer Corps on a quest to avenge his family.",
+    isNew:false, isTrending:true, isPopular:true, progress:65 },
+
+  { id:2, title:"Attack on Titan", genre:["Action","Horror"], year:"2013", rating:"9.0", eps:"88", badge:"TOP",
+    videoUrl: "",
+    thumb:"https://cdn.myanimelist.net/images/anime/10/47347.jpg",
+    banner:"https://cdn.myanimelist.net/images/anime/10/47347l.jpg",
+    desc:"Humanity lives inside cities surrounded by enormous walls due to the Titans, gigantic humanoid creatures who devour humans seemingly without reason. Eren Yeager joins the military to fight back.",
+    isNew:false, isTrending:true, isPopular:true, progress:30 },
+
+  { id:3, title:"Jujutsu Kaisen", genre:["Action","Fantasy"], year:"2020", rating:"8.9", eps:"48", badge:"NEW",
+    videoUrl: "",
+    thumb:"https://cdn.myanimelist.net/images/anime/1171/109222.jpg",
+    banner:"https://cdn.myanimelist.net/images/anime/1171/109222l.jpg",
+    desc:"Yuji Itadori, a boy with superhuman physical abilities, joins a secret organization of Jujutsu Sorcerers to eliminate a powerful Curse named Ryomen Sukuna.",
+    isNew:true, isTrending:true, isPopular:true, progress:80 },
+
+  { id:4, title:"Fullmetal Alchemist: Brotherhood", genre:["Action","Fantasy"], year:"2009", rating:"9.1", eps:"64", badge:"",
+    videoUrl: "",
+    thumb:"https://cdn.myanimelist.net/images/anime/1223/96541.jpg",
+    banner:"https://cdn.myanimelist.net/images/anime/1223/96541l.jpg",
+    desc:"Two brothers search for a Philosopher's Stone after an attempt to revive their deceased mother goes wrong, leaving them with disabilities.",
+    isNew:false, isTrending:false, isPopular:true, progress:0 },
+
+  { id:5, title:"Naruto Shippuden", genre:["Action","Fantasy"], year:"2007", rating:"8.7", eps:"500", badge:"",
+    videoUrl: "",
+    thumb:"https://cdn.myanimelist.net/images/anime/1565/111305.jpg",
+    banner:"https://cdn.myanimelist.net/images/anime/1565/111305l.jpg",
+    desc:"Naruto Uzumaki, a young ninja who seeks recognition and dreams of becoming the Hokage, the leader of his village. A story of friendship, perseverance, and never giving up.",
+    isNew:false, isTrending:false, isPopular:true, progress:45 },
+
+  { id:6, title:"One Piece", genre:["Action","Comedy"], year:"1999", rating:"9.0", eps:"1000+", badge:"TOP",
+    videoUrl: "",
+    thumb:"https://cdn.myanimelist.net/images/anime/6/73245.jpg",
+    banner:"https://cdn.myanimelist.net/images/anime/6/73245l.jpg",
+    desc:"Monkey D. Luffy and his crew of pirates search for the ultimate treasure known as the 'One Piece' to become the King of the Pirates.",
+    isNew:false, isTrending:true, isPopular:true, progress:0 },
+
+  { id:7, title:"My Hero Academia", genre:["Action","Sci-Fi"], year:"2016", rating:"8.5", eps:"113", badge:"NEW",
+    videoUrl: "",
+    thumb:"https://cdn.myanimelist.net/images/anime/10/78745.jpg",
+    banner:"https://cdn.myanimelist.net/images/anime/10/78745l.jpg",
+    desc:"In a world where most people have superpowers called Quirks, Izuku Midoriya is born without one. But his encounter with the greatest hero changes everything.",
+    isNew:true, isTrending:true, isPopular:false, progress:0 },
+
+  { id:8, title:"Death Note", genre:["Horror","Sci-Fi"], year:"2006", rating:"9.0", eps:"37", badge:"",
+    videoUrl: "",
+    thumb:"https://cdn.myanimelist.net/images/anime/9/9453.jpg",
+    banner:"https://cdn.myanimelist.net/images/anime/9/9453l.jpg",
+    desc:"A student named Light Yagami discovers a supernatural notebook that grants him the power to kill anyone whose name he writes in it.",
+    isNew:false, isTrending:false, isPopular:true, progress:0 },
+
+  { id:9, title:"Sword Art Online", genre:["Isekai","Action"], year:"2012", rating:"7.8", eps:"96", badge:"",
+    videoUrl: "",
+    thumb:"https://cdn.myanimelist.net/images/anime/11/39717.jpg",
+    banner:"https://cdn.myanimelist.net/images/anime/11/39717l.jpg",
+    desc:"Kazuto Kirigaya is trapped in a virtual reality MMORPG with thousands of other players. The only way out is to beat all 100 floors of the game.",
+    isNew:false, isTrending:false, isPopular:false, progress:0 },
+
+  { id:10, title:"Tokyo Ghoul", genre:["Action","Horror"], year:"2014", rating:"7.9", eps:"48", badge:"",
+    videoUrl: "",
+    thumb:"https://cdn.myanimelist.net/images/anime/5/64449.jpg",
+    banner:"https://cdn.myanimelist.net/images/anime/5/64449l.jpg",
+    desc:"Ken Kaneki, a college student, nearly dies in an attack by a ghoul — a creature that consumes human flesh — and transforms into a half-ghoul himself.",
+    isNew:false, isTrending:false, isPopular:true, progress:0 },
+
+  { id:11, title:"Re:Zero", genre:["Isekai","Fantasy"], year:"2016", rating:"8.2", eps:"50", badge:"NEW",
+    videoUrl: "",
+    thumb:"https://cdn.myanimelist.net/images/anime/1522/128039.jpg",
+    banner:"https://cdn.myanimelist.net/images/anime/1522/128039l.jpg",
+    desc:"Subaru Natsuki is suddenly summoned to another world on his way home from the convenience store. With no idea who did it, he begins to investigate.",
+    isNew:true, isTrending:false, isPopular:false, progress:0 },
+
+  { id:12, title:"Haikyuu!!", genre:["Sports","Comedy"], year:"2014", rating:"8.7", eps:"85", badge:"",
+    videoUrl: "",
+    thumb:"https://cdn.myanimelist.net/images/anime/7/76014.jpg",
+    banner:"https://cdn.myanimelist.net/images/anime/7/76014l.jpg",
+    desc:"Shoyo Hinata, a short boy inspired by a volleyball player, joins his middle school team and pursues his dream to become a great volleyball player despite his height.",
+    isNew:false, isTrending:true, isPopular:false, progress:0 },
+];
+
+const comingSoon = [
+  { title:"Bleach: Thousand-Year Blood War Pt. 4", month:"JUL", day:"12", ep:"Final Arc Continues" },
+  { title:"One Punch Man Season 3", month:"AUG", day:"3", ep:"New Season" },
+  { title:"Chainsaw Man Season 2", month:"OCT", day:"7", ep:"Awaited Sequel" },
+];
+
+let currentGenre = "All";
+let searchQuery = "";
+
+function renderCard(anime) {
+  const hasLink = !!anime.videoUrl;
+  return `
+    <div class="anime-card" onclick="openModal(animeData.find(a=>a.id==${anime.id}))">
+      <div class="card-thumb">
+        <img src="${anime.thumb}" alt="${anime.title}" loading="lazy" onerror="this.src='https://via.placeholder.com/200x300/1a2332/e85d04?text=${encodeURIComponent(anime.title)}'">
+        ${anime.badge ? `<div class="card-badge ${anime.badge==='NEW'?'new':anime.badge==='TOP'?'top':''}">${anime.badge}</div>` : ''}
+        ${!hasLink ? `<div class="card-badge" style="top:auto;bottom:8px;left:8px;background:#374151;font-size:0.62rem;">NO LINK</div>` : ''}
+        <div class="card-overlay">
+          <div class="play-btn">&#9654;</div>
+        </div>
+      </div>
+      <div class="card-info">
+        <div class="card-title">${anime.title}</div>
+        <div class="card-sub">
+          <span class="card-rating">&#11088; ${anime.rating}</span>
+          <span>${anime.year}</span>
+          <span>${anime.eps} eps</span>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+function renderContinueCard(anime) {
+  return `
+    <div class="continue-card" onclick="openModal(animeData.find(a=>a.id==${anime.id}))">
+      <div class="continue-thumb">
+        <img src="${anime.banner}" alt="${anime.title}" loading="lazy" onerror="this.src='https://via.placeholder.com/520x293/1a2332/e85d04?text=${encodeURIComponent(anime.title)}'">
+        <div class="progress-bar">
+          <div class="progress-fill" style="width:${anime.progress}%"></div>
+        </div>
+      </div>
+      <div class="continue-info">
+        <div class="continue-title">${anime.title}</div>
+        <div class="continue-ep">${anime.progress}% watched &middot; ${anime.eps} eps</div>
+      </div>
+    </div>
+  `;
+}
+
+function renderAll() {
+  let filtered = animeData;
+  if (currentGenre !== "All") filtered = filtered.filter(a => a.genre.includes(currentGenre));
+  if (searchQuery) filtered = filtered.filter(a => a.title.toLowerCase().includes(searchQuery.toLowerCase()));
+
+  const trending    = filtered.filter(a => a.isTrending);
+  const newReleases = filtered.filter(a => a.isNew);
+  const popular     = filtered.filter(a => a.isPopular);
+  const continueW   = animeData.filter(a => a.progress > 0);
+
+  const empty = '<p style="color:var(--text-muted); grid-column:1/-1">No anime found.</p>';
+  document.getElementById('trendingCards').innerHTML    = trending.map(renderCard).join('') || empty;
+  document.getElementById('newReleasesCards').innerHTML = newReleases.map(renderCard).join('') || empty;
+  document.getElementById('popularCards').innerHTML     = popular.map(renderCard).join('') || empty;
+  document.getElementById('continueCards').innerHTML    = continueW.map(renderContinueCard).join('');
+}
+
+function renderComingSoon() {
+  document.getElementById('comingSoonCards').innerHTML = comingSoon.map(c => `
+    <div class="coming-card">
+      <div class="coming-date">
+        <span class="coming-month">${c.month}</span>
+        <span class="coming-day">${c.day}</span>
+      </div>
+      <div class="coming-info">
+        <div class="coming-name">${c.title}</div>
+        <div class="coming-ep">${c.ep}</div>
+      </div>
+    </div>
+  `).join('');
+}
+
+function filterGenre(genre, el) {
+  currentGenre = genre;
+  document.querySelectorAll('.genre-tag').forEach(t => t.classList.remove('active'));
+  el.classList.add('active');
+  renderAll();
+}
+
+function handleSearch(val) {
+  searchQuery = val;
+  renderAll();
+}
+
+let currentAnime = null;
+
+function openModal(anime) {
+  if (!anime) return;
+  currentAnime = anime;
+
+  document.getElementById('modalImg').src = anime.banner;
+  document.getElementById('modalImg').alt = anime.title;
+  document.getElementById('modalTitle').textContent = anime.title;
+  document.getElementById('modalMeta').innerHTML = `
+    <span class="modal-tag">&#11088; ${anime.rating}</span>
+    <span class="modal-tag">&#128197; ${anime.year}</span>
+    <span class="modal-tag">&#127916; ${anime.eps} eps</span>
+    ${anime.genre.map(g=>`<span class="modal-tag">${g}</span>`).join('')}
+  `;
+  document.getElementById('modalDesc').textContent = anime.desc;
+
+  const thumb = document.querySelector('.modal-thumb');
+  const oldIframe = thumb.querySelector('iframe');
+  if (oldIframe) oldIframe.remove();
+  document.querySelector('.modal-thumb-overlay').style.display = 'flex';
+
+  const watchBtn = document.getElementById('watchBtn');
+  if (anime.videoUrl) {
+    watchBtn.textContent = '▶ Watch Now';
+    watchBtn.style.background = 'var(--accent)';
+    watchBtn.onclick = () => playVideo(anime);
+  } else {
+    watchBtn.textContent = '🔗 Add Video Link';
+    watchBtn.style.background = '#374151';
+    watchBtn.onclick = () => promptAddLink(anime);
+  }
+
+  document.getElementById('modalOverlay').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function playVideo(anime) {
+  if (!anime.videoUrl) { promptAddLink(anime); return; }
+  const thumb = document.querySelector('.modal-thumb');
+  const overlay = document.querySelector('.modal-thumb-overlay');
+  const old = thumb.querySelector('iframe');
+  if (old) old.remove();
+
+  const iframe = document.createElement('iframe');
+  iframe.src = anime.videoUrl;
+  iframe.style.cssText = 'position:absolute;inset:0;width:100%;height:100%;border:none;z-index:3;';
+  iframe.allowFullscreen = true;
+  iframe.allow = "autoplay; fullscreen";
+  thumb.appendChild(iframe);
+  overlay.style.display = 'none';
+}
+
+function promptAddLink(anime) {
+  const url = prompt(
+    'Paste the video link for "' + anime.title + '":\n\nWorks with:\n• YouTube link\n• Google Drive share link\n• Direct .mp4 link\n• Any embed link',
+    anime.videoUrl || ''
+  );
+  if (url === null) return;
+  if (url.trim() === '') {
+    anime.videoUrl = '';
+    alert('Video link removed from "' + anime.title + '".');
+    openModal(anime);
+    return;
+  }
+  anime.videoUrl = url.trim();
+  alert('Link saved for "' + anime.title + '"! Tap Watch Now to play.');
+  openModal(anime);
+}
+
+function closeModal() {
+  const old = document.querySelector('.modal-thumb iframe');
+  if (old) old.remove();
+  document.querySelector('.modal-thumb-overlay').style.display = 'flex';
+  document.getElementById('modalOverlay').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+function closeModalOutside(e) {
+  if (e.target === document.getElementById('modalOverlay')) closeModal();
+}
+
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+renderAll();
+renderComingSoon();
